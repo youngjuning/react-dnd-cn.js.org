@@ -1,11 +1,10 @@
 ---
-# TODO 替换为新的 TDK
-title: A static site based on dumi
-description: 洛竹
-keywords: [洛竹]
+title: React DnD
+description: React DnD 中文文档
+keywords: [紫竹翻译计划, react, drag drop, html5]
 hero:
-  title: Site
-  description: A static site based on dumi
+  title: React DnD
+  description: React 拖拽组件库
   actions:
     - text: Hello
       link: /
@@ -23,4 +22,4 @@ features:
     description: Put ! description here
 ---
 
-dumi-site-template
+React 拖拽组件库

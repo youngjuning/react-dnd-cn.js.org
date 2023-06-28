@@ -1,7 +1,7 @@
 {
-  "name": "dumi-site-template",
+  "name": "zizhudocs",
   "version": "0.0.1",
-  "description": "A static site based on dumi",
+  "description": "紫竹翻译计划",
   "scripts": {
     "postinstall": "patch-package",
     "start": "npm run dev",
