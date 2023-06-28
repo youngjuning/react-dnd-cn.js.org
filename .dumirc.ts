@@ -1,10 +1,11 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  favicons: ['https://react-dnd.github.io/react-dnd/icons/icon-512x512.png'],
+  favicons: ['https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png'],
   autoAlias: false,
   themeConfig: {
     name: 'React DnD',
+    logo: 'https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png',
     prefersColor: { default: 'auto' },
     socialLinks: {
       github: 'https://github.com/youngjuning/react-dnd-cn.js.org',
