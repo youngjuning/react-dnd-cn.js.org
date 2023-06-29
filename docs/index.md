@@ -1,5 +1,5 @@
 ---
-title: React 拖放组件库
+title: 好用的 React 拖放组件库
 description: React DnD 中文文档
 keywords: [紫竹翻译计划, react, drag drop, html5]
 hero:
