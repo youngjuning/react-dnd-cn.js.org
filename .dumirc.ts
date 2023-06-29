@@ -4,7 +4,7 @@ export default defineConfig({
   favicons: ['https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png'],
   autoAlias: false,
   themeConfig: {
-    name: 'React DnD',
+    name: 'React DnD 中文',
     logo: 'https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png',
     prefersColor: { default: 'auto' },
     socialLinks: {
