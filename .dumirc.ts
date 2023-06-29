@@ -23,8 +23,7 @@ export default defineConfig({
     // ga_v2: '',
   },
   sitemap: {
-    // TODO 配置为 js.org 域名
-    hostname: 'https://react-dnd-cn.vercel.app',
+    hostname: 'https://react-dnd.beautymems.com',
   },
   hash: true,
   exportStatic: {},
