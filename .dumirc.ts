@@ -19,8 +19,7 @@ export default defineConfig({
   },
   publicPath: '/',
   analytics: {
-    // TODO 替换为新的的 Google Analytics 代码
-    // ga_v2: '',
+    ga_v2: 'G-H3HDXX75PH',
   },
   sitemap: {
     hostname: 'https://react-dnd.beautymems.com',
