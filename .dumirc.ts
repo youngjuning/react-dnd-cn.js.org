@@ -22,7 +22,7 @@ export default defineConfig({
     ga_v2: 'G-H3HDXX75PH',
   },
   sitemap: {
-    hostname: 'https://react-dnd.beautymems.com',
+    hostname: 'https://react-dnd-cn.js.org',
   },
   hash: true,
   exportStatic: {},
