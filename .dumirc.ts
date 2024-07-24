@@ -12,7 +12,7 @@ export default defineConfig({
       twitter: 'https://twitter.com/luozhu2021'
     },
     hd: { rules: [] },
-    footer: 'Made with ❤️ by <a href="https://youngjuning.js.org/" target="_blank" nofollow>紫竹翻译计划</a>'
+    footer: 'Made with ❤️ by <a href="https://youngjuning.js.org/" target="_blank" nofollow>紫升</a>'
   },
   theme: {
     '@c-primary': '#4078c0',
@@ -27,7 +27,7 @@ export default defineConfig({
   hash: true,
   exportStatic: {},
   ...(process.env.NODE_ENV === 'development' ? {} : { ssr: {} }),
-  headScripts: [
-    {src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7029815294762181', async: true, crossorigin: 'anonymous'},
-  ]
+  headScripts: process.env.NODE_ENV !== 'development' ? [
+    ({src: '/adsbygoogle.js', async: true, crossorigin: 'anonymous'}),
+  ]: [],
 });

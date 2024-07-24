@@ -1,7 +1,7 @@
 {
-  "name": "zizhudocs",
+  "name": "youngjuning.js.org",
   "version": "0.0.1",
-  "description": "紫竹翻译计划",
+  "description": "紫升",
   "scripts": {
     "postinstall": "patch-package",
     "start": "npm run dev",

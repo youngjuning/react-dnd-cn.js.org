@@ -48,8 +48,6 @@ const DocLayout: FC = () => {
         }
       }, 1);
     }
-    console.log("pathname",pathname);
-
   }, [loading, hash]);
 
   return (
@@ -66,7 +64,10 @@ const DocLayout: FC = () => {
         {fm.description && (
           <meta property="og:description" content={fm.description} />
         )}
-        {fm.keywords && fm.keywords.map(keyword => (<meta key={keyword} property="article:tag" content={keyword}></meta>))}
+        {fm.keywords &&
+          fm.keywords.map((keyword) => (
+            <meta key={keyword} property="article:tag" content={keyword}></meta>
+          ))}
         <link rel="canonical" href={window.location.origin + pathname}></link>
       </Helmet>
       <Header />
@@ -90,7 +91,19 @@ const DocLayout: FC = () => {
       <main>
         {showSidebar && <Sidebar />}
         <Content>
-          {outlet}
+          <article>
+            {outlet}
+            <Adsense
+              className="adsbygoogle"
+              style={{ display: 'block' }}
+              data-ad-client="ca-pub-5641491107630454"
+              data-ad-slot="5596588097"
+              data-page-url="https://www.nablepart.com"
+              data-override-format="true"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            />
+          </article>
           <Footer />
         </Content>
         {fm.toc === 'content' && (
