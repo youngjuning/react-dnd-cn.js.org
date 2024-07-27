@@ -19,7 +19,7 @@ export default defineConfig({
   },
   publicPath: '/',
   analytics: {
-    ga_v2: 'G-H3HDXX75PH',
+    ga_v2: 'G-YC1MTC58HP',
   },
   sitemap: {
     hostname: 'https://react-dnd-cn.js.org',
