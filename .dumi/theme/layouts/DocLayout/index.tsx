@@ -10,8 +10,10 @@ import {
   useSidebarData,
   useSiteData,
 } from 'dumi';
+
 import Content from 'dumi/theme-default/slots/Content';
 import Features from 'dumi/theme-default/slots/Features';
+import ContentFooter from 'dumi/theme-default/slots/ContentFooter';
 import Footer from 'dumi/theme-default/slots/Footer';
 import Header from 'dumi/theme-default/slots/Header';
 import Hero from 'dumi/theme-default/slots/Hero';
