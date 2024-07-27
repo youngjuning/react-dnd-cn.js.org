@@ -38,7 +38,7 @@ export default defineConfig({
   headScripts:
     process.env.NODE_ENV !== 'development'
       ? [
-          { src: '/adsbygoogle.js', async: true, crossorigin: 'anonymous' },
+          { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4963807055498900', async: true, crossorigin: 'anonymous' },
         ]
       : [],
     scripts: [
