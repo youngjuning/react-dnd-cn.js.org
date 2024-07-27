@@ -13,8 +13,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "dumi": "2.4.6",
-    "core-js": "3.31.0",
-    "patch-package": "^7.0.0"
+    "dumi": "2.4.6"
   }
 }
