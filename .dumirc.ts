@@ -8,6 +8,10 @@ export default defineConfig({
   themeConfig: {
     name: 'React DnD',
     logo: 'https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png',
+    metas: [
+      { name: 'keywords', content: 'react dnd, 紫升, react, 前端, 拖拽' },
+      { name: 'description', content: 'React DnD 是一组React 高阶组件，使用的时候只需要使用对应的API 将目标组件进行包裹，即可实现拖动或接受拖动元素的功能。' },
+    ],
     prefersColor: { default: 'auto' },
     editLink:
       'https://github.com/youngjuning/react-dnd-cn.js.org/edit/main/{filename}',
