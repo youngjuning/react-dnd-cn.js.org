@@ -1,16 +1,18 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  favicons: [
-    'https://react-dnd.github.io/react-dnd/icons/icon-48x48.png',
-  ],
+  favicons: ['https://react-dnd.github.io/react-dnd/icons/icon-48x48.png'],
   autoAlias: false,
   themeConfig: {
     name: 'React DnD',
     logo: 'https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png',
     metas: [
       { name: 'keywords', content: 'react dnd, 紫升, react, 前端, 拖拽' },
-      { name: 'description', content: 'React DnD 是一组React 高阶组件，使用的时候只需要使用对应的API 将目标组件进行包裹，即可实现拖动或接受拖动元素的功能。' },
+      {
+        name: 'description',
+        content:
+          'React DnD 是一组React 高阶组件，使用的时候只需要使用对应的API 将目标组件进行包裹，即可实现拖动或接受拖动元素的功能。',
+      },
     ],
     prefersColor: { default: 'auto' },
     editLink:
@@ -20,7 +22,7 @@ export default defineConfig({
       twitter: 'https://twitter.com/luozhu2021',
     },
     hd: { rules: [] },
-    footer: `Made with ❤️ by <a href="https://github.com/youngjuning" target="_blank">紫升</a><br/><div style="width:180px;margin: 0 auto"><script async type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ljfzkq-EnNph52CirW6-xUzwM3qjD3NAc9n1QTRAGBs"></script></div><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span></span> | <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span></span>`,
+    footer: `Made with ❤️ by <a href="https://github.com/youngjuning" target="_blank">紫升</a><br/><div style="width:180px;margin: 0 auto"><script async type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ljfzkq-EnNph52CirW6-xUzwM3qjD3NAc9n1QTRAGBs"></script></div>`,
   },
   theme: {
     '@c-primary': '#4078c0',
@@ -38,14 +40,11 @@ export default defineConfig({
   headScripts:
     process.env.NODE_ENV !== 'development'
       ? [
-          { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4963807055498900', async: true, crossorigin: 'anonymous' },
+          {
+            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4963807055498900',
+            async: true,
+            crossorigin: 'anonymous',
+          },
         ]
       : [],
-    scripts: [
-        {
-          async: true,
-          src: 'https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js',
-          crossorigin: 'anonymous',
-        },
-      ],
 });
