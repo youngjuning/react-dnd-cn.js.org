@@ -32,14 +32,16 @@ export default defineConfig({
   exportStatic: {},
   ...(process.env.NODE_ENV === 'development' ? {} : { ssr: {} }),
   headScripts:
-    process.env.NODE_ENV === 'development'
+    process.env.NODE_ENV !== 'development'
       ? [
           { src: '/adsbygoogle.js', async: true, crossorigin: 'anonymous' },
-          {
-            async: true,
-            src: 'https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js',
-            crossorigin: 'anonymous',
-          },
         ]
       : [],
+    scripts: [
+        {
+          async: true,
+          src: 'https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js',
+          crossorigin: 'anonymous',
+        },
+      ],
 });
