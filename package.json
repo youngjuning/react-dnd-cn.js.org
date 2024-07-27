@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "紫升",
   "scripts": {
-    "postinstall": "patch-package",
     "start": "npm run dev",
     "dev": "dumi dev",
     "build": "dumi build",
