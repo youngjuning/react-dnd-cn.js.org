@@ -4,8 +4,6 @@ group:
   title: Hooks
   order: 3
 title: 概述
-description: ''
-keywords: []
 ---
 
 # Using the Hooks API

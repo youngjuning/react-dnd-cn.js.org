@@ -4,8 +4,6 @@ group:
   title: Hooks
   order: 3
 title: useDrop
-description: ''
-keywords: []
 ---
 
 # useDrop

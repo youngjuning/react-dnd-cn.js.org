@@ -4,8 +4,6 @@ group:
   title: 监控状态
   order: 4
 title: DragSourceMonitor
-description: ''
-keywords: []
 ---
 
 # DragSourceMonitor

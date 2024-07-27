@@ -1,8 +1,6 @@
 ---
 order: 0
 title: 开始
-description: ''
-keywords: []
 nav:
   title: 开始
   order: 0

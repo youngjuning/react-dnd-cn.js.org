@@ -4,8 +4,6 @@ group:
   title: 组件
   order: 2
 title: DragPreviewImage
-description: ''
-keywords: []
 ---
 
 # DragPreviewImage
