@@ -1,5 +1,5 @@
 {
-  "name": "youngjuning.js.org",
+  "name": "react-dnd-cn.js.org",
   "version": "0.0.1",
   "description": "紫升",
   "scripts": {
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "dumi": "2.2.1",
+    "dumi": "2.4.6",
     "core-js": "3.31.0",
     "patch-package": "^7.0.0"
   }

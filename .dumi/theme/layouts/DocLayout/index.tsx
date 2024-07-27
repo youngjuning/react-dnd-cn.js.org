@@ -16,6 +16,7 @@ import Footer from 'dumi/theme-default/slots/Footer';
 import Header from 'dumi/theme-default/slots/Header';
 import Hero from 'dumi/theme-default/slots/Hero';
 import Sidebar from '../../slots/Sidebar';
+import ContentFooter from '../../slots/ContentFooter';
 import Adsense from '../../slots/Adsense';
 import Toc from 'dumi/theme-default/slots/Toc';
 import React, { useEffect, useState, type FC } from 'react';
@@ -90,22 +91,23 @@ const DocLayout: FC = () => {
       )}
       <main>
         {showSidebar && <Sidebar />}
-        <Content>
-          <article>
-            {outlet}
-            <Adsense
-              className="adsbygoogle"
-              style={{ display: 'block' }}
-              data-ad-client="ca-pub-5641491107630454"
-              data-ad-slot="5596588097"
-              data-page-url="https://www.nablepart.com"
-              data-override-format="true"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            />
-          </article>
-          <Footer />
-        </Content>
+        <div style={{ flex: 1 }}>
+          <Content>
+            <article>{outlet}</article>
+            <ContentFooter />
+            <Footer />
+          </Content>
+          <Adsense
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-5641491107630454"
+            data-ad-slot="5596588097"
+            data-page-url="https://www.nablepart.com"
+            data-override-format="true"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          />
+        </div>
         {fm.toc === 'content' && (
           <div className="dumi-default-doc-layout-toc-wrapper">
             <h4>TABLE OF CONTENTS</h4>
