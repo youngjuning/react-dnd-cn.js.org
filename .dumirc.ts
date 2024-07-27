@@ -33,17 +33,11 @@ export default defineConfig({
   exportStatic: {},
   ...(process.env.NODE_ENV === 'development' ? {} : { ssr: {} }),
   headScripts:
-    process.env.NODE_ENV !== 'development'
-      ? [{ src: '/adsbygoogle.js', async: true, crossorigin: 'anonymous' }]
-      : [],
-  scripts:
-    process.env.NODE_ENV !== 'development'
-      ? [
-          {
-            async: true,
-            src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
-            crossorigin: 'anonymous'
-          },
-        ]
+    process.env.NODE_ENV === 'development'
+      ? [{ src: '/adsbygoogle.js', async: true, crossorigin: 'anonymous' }, {
+        async: true,
+        src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
+        crossorigin: 'anonymous'
+      },]
       : [],
 });
