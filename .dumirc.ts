@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   favicons: [
-    'https://cdn.jsdelivr.net/gh/youngjuning/images@main/1687963061740.png',
+    'https://react-dnd.github.io/react-dnd/icons/icon-48x48.png',
   ],
   autoAlias: false,
   themeConfig: {
