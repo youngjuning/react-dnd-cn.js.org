@@ -41,7 +41,7 @@ export default defineConfig({
     process.env.NODE_ENV !== 'development'
       ? [
           {
-            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4963807055498900',
+            src: '/adsbygoogle.js',
             async: true,
             crossorigin: 'anonymous',
           },
