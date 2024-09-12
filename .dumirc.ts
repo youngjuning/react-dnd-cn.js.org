@@ -22,7 +22,7 @@ export default defineConfig({
       twitter: 'https://twitter.com/luozhu2021',
     },
     hd: { rules: [] },
-    footer: `Made with ❤️ by <a href="https://github.com/youngjuning" target="_blank">紫升</a><br/><div style="width:180px;margin: 0 auto"></div>`,
+    footer: `Made with ❤️ by <a href="https://github.com/youngjuning" target="_blank">紫升</a><br/><div style="width:180px;margin: 0 auto"><script async type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=ljfzkq-EnNph52CirW6-xUzwM3qjD3NAc9n1QTRAGBs"></script></div>`,
   },
   theme: {
     '@c-primary': '#4078c0',
